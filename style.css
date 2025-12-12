@@ -2,6 +2,9 @@
  margin: 0;
  padding: 0;
 }
+body{
+    height: 100vh;
+}
 .navline{
    display: flex;
     align-items: center;
@@ -18,7 +21,7 @@
 
 .rabbit{
     height:60px ;
-    width: 260px;
+    width: 300px;
     object-fit: cover;
       display: inline-flex;
   align-items: center;
