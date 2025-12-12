@@ -3,9 +3,10 @@
  padding: 0;
 }
 .navline{
-   /* display: flex; */
+   display: flex;
     align-items: center;
      justify-content: space-around;
+     flex-wrap: nowrap;
     margin: 5px;
     padding: 10px; 
     height: 80px;
@@ -19,6 +20,8 @@
     height:60px ;
     width: 260px;
     object-fit: cover;
+      display: inline-flex;
+  align-items: center;
 }
 
 .linkstyle{
@@ -29,7 +32,12 @@
    font-size: 16px;
    font-weight: 600;
    color: black;
-   margin: 5px;
+   /* margin: 5px;
+   padding: 15px; */
+
+ }
+ .listdiv{
+    margin-top: 30%;
  }
 .taskerbutton{
     color: skyblue;
@@ -59,6 +67,5 @@
     font-family: Arial, Helvetica, sans-serif;
     width: 50px;
 }
-
 
 
