@@ -88,23 +88,15 @@ body{
   box-sizing: border-box;
 
 }
-/* h1{
-   
-    width: 600px;
-    min-width: 450px;
-    height: 120px;
-    font-size: 60px;
-    line-height: 57px;
-    font-weight: 500;
-} */
+
  h1{
     .herosection h1 {
-  font-size: clamp(1.5rem, 5vw, 3rem); /* scales with screen width */
+  font-size: clamp(1.5rem, 6vw, 3rem); 
   line-height: 1.4;
 }
  }
 
-/* h1 > span{
+ h1 > span{
     position: relative;
     display: inline-block;
     height: 1.25em;
@@ -114,7 +106,7 @@ body{
 h1 > span > span{
     display: block;
     animation: animatedwords 5s infinite ease;
-} */
+} 
 @keyframes animatedwords {
     0% {transform: translateY();}
     25% {transform: translateY(-100%);}
@@ -135,6 +127,16 @@ h1 > span > span{
     color: white;
     border: 2px solid azure;
     box-shadow: 2px 2px 2px 2px grey;
+}
+@media (max-width: 480px) {
+  .herosection h1 {
+    font-size: 1.5rem;
+  }
+
+  .servicebutton {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
 }
 
  
