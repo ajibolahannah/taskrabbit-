@@ -4,6 +4,7 @@
 }
 body{
     height: 100vh;
+    width: 100%;
 }
 .navline{
    display: flex;
@@ -76,25 +77,27 @@ body{
     width: 50px;
 }
 .herosection{
-    background: linear-gradient(skyblue,white,azure);
-      font-size: 80px;
-   display: flex;
+  background: linear-gradient(skyblue,white,azure);
+  border-radius: 10px;
+  font-size: 80px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;   
   text-align: center;
   height: 50vh;          
-  /* padding: 0 20px;          */
   box-sizing: border-box;
-
-}
+  padding: 10px;
+ }
 
  h1{
-    .herosection h1 {
-  font-size: clamp(2rem, 6vw, 3rem); 
+  
+  font-size: clamp(1.5rem, 6vw, 3rem); 
   line-height: 1.4;
-}
- }
+  color: rgb(76, 97, 136);
+
+
+ } 
 
  h1 > span{
     position: relative;
@@ -130,7 +133,7 @@ h1 > span > span{
 }
 @media (max-width: 480px) {
   .herosection h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .servicebutton {
