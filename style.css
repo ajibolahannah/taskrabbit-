@@ -124,6 +124,7 @@ h1 > span > span{
     padding: 15px;
     font-weight: 500;
     border-radius: 10px;
+    
 }
 .servicebutton:hover{
     background-color: rgb(56,129,172);
@@ -141,17 +142,112 @@ h1 > span > span{
     font-size: 1.5rem;
   }
 }
+/* center the whole search bar */
+.searchdiv {
+  width: 600px;
+  max-width: 90%;
+  margin: 0 auto;              /* centers horizontally */
+  display: flex;
+  justify-content: center;
+}
+
+/* form wrapper */
+.searchdiv form {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #cfcfcf;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+}
+
+/* input */
+.searchdiv .input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 18px 24px;
+  font-size: 1rem;
+}
+
+/* search button (SKY BLUE) */
+.searchdiv .searchicon {
+  background: #38bdf8;        /* sky blue */
+  border: none;
+  padding: 0 28px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* icon color */
+.searchdiv .searchicon svg {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+/* hover effect */
+.searchdiv .searchicon:hover {
+  background: #0ea5e9;        /* darker sky blue */
+}
+
+/* focus effect */
+.searchdiv form:focus-within {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56,189,248,0.25);
+}
+
+/* .searchdiv {
+  width: 600px;
+  max-width: 100%;
+ 
+}
+ form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #cfcfcf;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #fff; 
+}
+  .input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+}
+.searchicon{
+  padding: 5px;
+  border: none;
+  background-color: skyblue;
+  color: white;
+  font-weight: 600;
+  width: 30px; 
+}  */
 .categories {
   margin-top: -1px; 
   padding: 20px;
 }
 .categorygrid{
     display: flex;
-    overflow-y:hidden;
-    overflow-x: scroll;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-
-
-
- 
-
+.category{
+  font-weight: 600;
+  font-size: 20px;
+  border: 3px solid rgb(98, 93, 93) ;
+  border-radius: 20px;
+  padding: 6px;
+  
+}
+.category:hover{
+    box-shadow: 1px 1px 1px 1px rgb(177, 177, 177);
+}
+.fw-bolder{
+  font-size:30px;
+}
