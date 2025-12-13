@@ -141,6 +141,17 @@ h1 > span > span{
     font-size: 1.5rem;
   }
 }
+.categories {
+  margin-top: -1px; 
+  padding: 20px;
+}
+.categorygrid{
+    display: flex;
+    overflow-y:hidden;
+    overflow-x: scroll;
+}
+
+
 
  
 
