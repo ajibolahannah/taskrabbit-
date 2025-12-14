@@ -2,10 +2,13 @@
  margin: 0;
  padding: 0;
 }
-body{
+ body{
     height: 100vh;
     width: 100%;
-}
+    min-height: 100vh;
+    line-height: 1.6;
+} 
+
 .navline{
    display: flex;
     align-items: center;
@@ -41,9 +44,12 @@ body{
    padding: 15px; */
 
  }
- @media (max-width:400px) {
+ @media (max-width:480px) {
     .listdiv{
     margin-top: 30%;
+    }
+    h1{
+      font-weight: 600;
     }
     
  }
@@ -58,6 +64,7 @@ body{
      border-radius: 10px;
      border: 1px solid  skyblue;
      margin: 2%;
+     font-family: 'Montserrat', sans-serif;
 }
 .taskerbutton:hover{
     color: rgb(123, 186, 211);
@@ -95,7 +102,6 @@ body{
   font-size: clamp(1.5rem, 6vw, 3rem); 
   line-height: 1.4;
   color: rgb(76, 97, 136);
-
 
  } 
 
@@ -142,16 +148,14 @@ h1 > span > span{
     font-size: 1.5rem;
   }
 }
-/* center the whole search bar */
+
 .searchdiv {
   width: 600px;
   max-width: 90%;
-  margin: 0 auto;              /* centers horizontally */
+  margin: 0 auto;              
   display: flex;
   justify-content: center;
 }
-
-/* form wrapper */
 .searchdiv form {
   display: flex;
   align-items: center;
@@ -161,8 +165,6 @@ h1 > span > span{
   background: #fff;
   width: 100%;
 }
-
-/* input */
 .searchdiv .input {
   flex: 1;
   border: none;
@@ -170,10 +172,8 @@ h1 > span > span{
   padding: 18px 24px;
   font-size: 1rem;
 }
-
-/* search button (SKY BLUE) */
 .searchdiv .searchicon {
-  background: #38bdf8;        /* sky blue */
+  background-color: rgb(103, 183, 215);
   border: none;
   padding: 0 28px;
   height: 100%;
@@ -182,52 +182,20 @@ h1 > span > span{
   align-items: center;
   justify-content: center;
 }
-
-/* icon color */
-.searchdiv .searchicon svg {
+.searchicon svg  {
   color: #fff;
   width: 20px;
   height: 20px;
 }
-
-/* hover effect */
 .searchdiv .searchicon:hover {
-  background: #0ea5e9;        /* darker sky blue */
+  background: #0ea5e9;      
 }
 
-/* focus effect */
+
 .searchdiv form:focus-within {
   border-color: #38bdf8;
   box-shadow: 0 0 0 3px rgba(56,189,248,0.25);
 }
-
-/* .searchdiv {
-  width: 600px;
-  max-width: 100%;
- 
-}
- form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.5px solid #cfcfcf;
-  border-radius: 50px;
-  overflow: hidden;
-  background: #fff; 
-}
-  .input {
-  flex: 1;
-  border: none;
-  padding: 5px;
-}
-.searchicon{
-  padding: 5px;
-  border: none;
-  background-color: skyblue;
-  color: white;
-  font-weight: 600;
-  width: 30px; 
-}  */
 .categories {
   margin-top: -1px; 
   padding: 20px;
@@ -247,7 +215,41 @@ h1 > span > span{
 }
 .category:hover{
     box-shadow: 1px 1px 1px 1px rgb(177, 177, 177);
+    cursor: pointer;
 }
 .fw-bolder{
   font-size:30px;
+}
+[data-tab-content]{
+  display: none;
+}
+.active[data-tab-content]{
+  display: block; 
+}
+.active[data-tab-content] h1{
+  color: #CFEAFF;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 3px 3px 3px grey;
+  font-family: 'Montserrat', sans-serif;
+}
+.active[data-tab-content]{
+  background-image: url(./construction-polygonal-wireframe-building-under-600nw-2636178941.webp);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  object-fit: contain;
+  background-position: center;
+  height: 400px;
+  /* width: 900px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+h3{
+  color: #6EC1E4;
+  text-align: center;
+  /* width: 200px; */
+  max-width: 520px;
 }

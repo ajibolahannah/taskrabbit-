@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background: linear-gradient(120deg, skyblue , white,skyblue);
+      height: 100vh;
+    }
+    .wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.line {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.line.active {
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+  <!-- clickable items -->
+  <div class="list">
+    <p class="line active" data-img="img1.jpg" data-text="Demolition services">
+      Demolition
+    </p>
+
+    <p class="line" data-img="img2.jpg" data-text="Home renovation services">
+      Home Renovation
+    </p>
+
+    <p class="line" data-img="img3.jpg" data-text="Handyman services">
+      Handyman
+    </p>
+  </div>
+
+  <!-- display area -->
+  <div class="display">
+    <img id="displayImg" src="img1.jpg">
+    <p id="displayText">Demolition services</p>
+  </div>
+
+</div>
+
+</body>
+<script>
+const lines = document.querySelectorAll('.line');
+const img = document.getElementById('displayImg');
+const text = document.getElementById('displayText');
+
+lines.forEach(line => {
+  line.addEventListener('click', () => {
+
+    // remove active from all
+    lines.forEach(l => l.classList.remove('active'));
+
+    // add active to clicked one
+    line.classList.add('active');
+
+    // change content
+    img.src = line.dataset.img;
+    text.textContent = line.dataset.text;
+  });
+});
+</script>
+
+</html>
