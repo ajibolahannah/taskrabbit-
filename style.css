@@ -280,7 +280,7 @@ h1 > span > span{
   flex-direction: column;
 }
  
-@media (min-width:400px) and (max-width
+@media  (max-width
 :889px) {
  
   .image{
