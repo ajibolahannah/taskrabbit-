@@ -229,7 +229,7 @@ h1 > span > span{
   font-family: 'Montserrat', sans-serif;
 }
 .active[data-tab-content]{
-  background-image: url(./asset/construction-polygonal-wireframe-building-under-600nw-2636178941.webp);
+  background-image: url(./construction-polygonal-wireframe-building-under-600nw-2636178941.webp);
   background-repeat: no-repeat;
   background-size: cover;  
   object-fit: contain;
@@ -302,3 +302,4 @@ h1 > span > span{
   }
   
 } 
+
