@@ -39,15 +39,10 @@
    font-family: Arial, Helvetica, sans-serif;
    font-size: 16px;
    font-weight: 600;
-   color: black;
-   /* margin: 5px;
-   padding: 15px; */
+   color: black; 
 
  }
- @media (max-width:480px) {
-    .listdiv{
-    margin-top: 30%;
-    }
+ @media (max-width:480px) {  
     h1{
       font-weight: 600;
     }
@@ -56,7 +51,6 @@
  
 .taskerbutton{
     color: rgb(108,189,229);
-     font-family: Arial, Helvetica, sans-serif;
      background-color: white;
      padding: 5px;
      width: 200px;
@@ -84,7 +78,7 @@
     width: 50px;
 }
 .herosection{
-  background: linear-gradient(skyblue,white,azure);
+  background: linear-gradient(skyblue,azure,skyblue);
   border-radius: 10px;
   font-size: 80px;
   display: flex;
@@ -122,7 +116,7 @@ h1 > span > span{
     50% {transform: translateY(-200%);}
     75% {transform: translateY(-300%);}
     100% {transform: translateY(-400%);}
-}
+} 
 .servicebutton{
     color: black;
     font-size: 25px;
@@ -155,6 +149,7 @@ h1 > span > span{
   margin: 0 auto;              
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 .searchdiv form {
   display: flex;
@@ -234,11 +229,11 @@ h1 > span > span{
   font-family: 'Montserrat', sans-serif;
 }
 .active[data-tab-content]{
-  background-image: url(./construction-polygonal-wireframe-building-under-600nw-2636178941.webp);
+  background-image: url(./asset/construction-polygonal-wireframe-building-under-600nw-2636178941.webp);
   background-repeat: no-repeat;
   background-size: cover;  
   object-fit: contain;
-  background-position: center;
+  background-position: cover;
   height: 400px;
   /* width: 900px; */
   display: flex;
@@ -247,9 +242,63 @@ h1 > span > span{
   justify-content: center;
 
 }
-h3{
+ h3{
   color: #6EC1E4;
   text-align: center;
   /* width: 200px; */
   max-width: 520px;
 }
+.cards{
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image{
+  width: 240px;
+  height: 163px;
+  background-position: center;
+  border-radius: 30px 0px 0px 0px;
+}
+ .textpart{
+  background-color: rgb(225, 227, 226);
+  width: 240px;
+  height: 100%;
+  text-wrap: wrap;
+  text-align: center;
+  border-radius: 0px 0px 30px 0px;
+  padding: 10px;
+} 
+.card{
+  box-shadow: 3px 2px 2px 2px  grey;
+  border-radius: 30px 0px 30px 0px;
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+@media (min-width:400px) and (max-width
+:889px) {
+ 
+  .image{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+  .card1{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 340px;
+  }
+  .card{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 340px;
+  }
+  
+} 
